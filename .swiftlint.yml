@@ -1,0 +1,19 @@
+disabled_rules:
+  - valid_docs
+
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+
+included:
+  - SideMenuController
+  - Example
+
+excluded:
+  - Example/Pods
+  - Pods
+
+line_length: 200
+
+function_body_length:
+  warning: 50
