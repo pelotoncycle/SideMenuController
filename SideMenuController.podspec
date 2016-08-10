@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  Side menu presentation controller
+  Side menu controller is a presentation controller and transition delegate to implement
+  lightweight side menus.
                        DESC
 
   s.homepage         = 'https://github.com/pelotoncycle/SideMenuController'
