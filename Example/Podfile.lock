@@ -9,27 +9,27 @@ PODS:
     - FBSnapshotTestCase (~> 2.0)
     - Nimble
     - Quick
+  - PCSideMenuController (0.1.0)
   - Quick (0.9.3)
-  - SideMenuController (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1)
   - Nimble (~> 4.1)
   - Nimble-Snapshots (~> 4.1)
+  - PCSideMenuController (from `../`)
   - Quick (~> 0.9)
-  - SideMenuController (from `../`)
 
 EXTERNAL SOURCES:
-  SideMenuController:
+  PCSideMenuController:
     :path: "../"
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
   Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
   Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
+  PCSideMenuController: 40b611af7d941a7ff06137ccfedb7bb2c6fdefe5
   Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
-  SideMenuController: c7c42c34c14806e272692f9ac3a14585b3c9017a
 
-PODFILE CHECKSUM: 17415e56704c7115fd07da5956fbfc313844382e
+PODFILE CHECKSUM: 094496a19bebe1dc56f3987a259d8f4c266ecb4b
 
 COCOAPODS: 1.0.1

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SideMenuController
+import PCSideMenuController
 
 class ViewController: UIViewController {
 

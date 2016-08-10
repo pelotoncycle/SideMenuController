@@ -1,9 +1,9 @@
 # SideMenuController
 
-[![CI Status](http://img.shields.io/travis/Ryan Fitzgerald/SideMenuController.svg?style=flat)](https://travis-ci.org/Ryan Fitzgerald/SideMenuController)
-[![Version](https://img.shields.io/cocoapods/v/SideMenuController.svg?style=flat)](http://cocoapods.org/pods/SideMenuController)
-[![License](https://img.shields.io/cocoapods/l/SideMenuController.svg?style=flat)](http://cocoapods.org/pods/SideMenuController)
-[![Platform](https://img.shields.io/cocoapods/p/SideMenuController.svg?style=flat)](http://cocoapods.org/pods/SideMenuController)
+[![CI Status](http://img.shields.io/travis/Ryan Fitzgerald/SideMenuController.svg?style=flat)](https://travis-ci.org/Ryan Fitzgerald/PCSideMenuController)
+[![Version](https://img.shields.io/cocoapods/v/SideMenuController.svg?style=flat)](http://cocoapods.org/pods/PCSideMenuController)
+[![License](https://img.shields.io/cocoapods/l/SideMenuController.svg?style=flat)](http://cocoapods.org/pods/PCSideMenuController)
+[![Platform](https://img.shields.io/cocoapods/p/SideMenuController.svg?style=flat)](http://cocoapods.org/pods/PCSideMenuController)
 
 ## Example
 
@@ -17,7 +17,7 @@ SideMenuController is available through [CocoaPods](http://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "SideMenuController"
+pod "PCSideMenuController"
 ```
 
 ## Author

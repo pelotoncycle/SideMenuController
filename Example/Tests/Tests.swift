@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import SideMenuController
+import PCSideMenuController
 
 class TableOfContentsSpec: QuickSpec {
   override func spec() {

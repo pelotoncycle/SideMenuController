@@ -61,9 +61,9 @@ platform :ios do
     increment_build_number(build_number: build_number, xcodeproj: './Example/SideMenuController.xcodeproj')
     increment_version_number(version_number: target_version, xcodeproj: './Example/SideMenuController.xcodeproj')
 
-    version_bump_podspec(path: "SideMenuController.podspec", version_number: target_version)
+    version_bump_podspec(path: "PCSideMenuController.podspec", version_number: target_version)
 
-    git_commit(path: ["./Example/SideMenuController/Info.plist", "./Example/Tests/Info.plist", "./SideMenuController.podspec"],
+    git_commit(path: ["./Example/SideMenuController/Info.plist", "./Example/Tests/Info.plist", "./PCSideMenuController.podspec"],
       message: "Release version #{target_version}")
     add_git_tag tag: target_version
 

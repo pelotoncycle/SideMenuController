@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'SideMenuController_Example' do
-  pod 'SideMenuController', :path => '../'
+  pod 'PCSideMenuController', :path => '../'
 
   target 'SideMenuController_Tests' do
     inherit! :search_paths
