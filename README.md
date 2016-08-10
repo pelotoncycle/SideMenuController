@@ -22,7 +22,7 @@ pod "SideMenuController"
 
 ## Author
 
-Ryan Fitzgerald, ryan.fitz1@gmail.com
+Ryan Fitzgerald, ryan.fitzgerald@pelotoncycle.com
 
 ## License
 
