@@ -5,46 +5,28 @@ import Nimble
 import SideMenuController
 
 class TableOfContentsSpec: QuickSpec {
-    override func spec() {
-        describe("these will fail") {
+  override func spec() {
 
-            it("can do maths") {
-                expect(1) == 2
-            }
+    context("these will pass") {
 
-            it("can read") {
-                expect("number") == "string"
-            }
+      it("can do maths") {
+        expect(23) == 23
+      }
 
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
-            }
+      it("will eventually pass") {
+        var time = "passing"
 
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    dispatch_async(dispatch_get_main_queue()) {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        NSThread.sleepForTimeInterval(0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
-            }
+        dispatch_async(dispatch_get_main_queue()) {
+          time = "done"
         }
+
+        waitUntil { done in
+          NSThread.sleepForTimeInterval(0.5)
+          expect(time) == "done"
+
+          done()
+        }
+      }
     }
+  }
 }
