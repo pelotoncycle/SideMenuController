@@ -1,35 +1,37 @@
 PODS:
-  - FBSnapshotTestCase (2.1.2):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
-  - FBSnapshotTestCase/Core (2.1.2)
-  - FBSnapshotTestCase/SwiftSupport (2.1.2):
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - Nimble (4.1.0)
-  - Nimble-Snapshots (4.1.0):
+  - Nimble (5.1.0)
+  - Nimble-Snapshots (4.3.0):
+    - Nimble-Snapshots/Core (= 4.3.0)
+  - Nimble-Snapshots/Core (4.3.0):
     - FBSnapshotTestCase (~> 2.0)
     - Nimble
     - Quick
-  - PCSideMenuController (0.1.0)
-  - Quick (0.9.3)
+  - PCSideMenuController (0.1.1)
+  - Quick (0.10.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1)
-  - Nimble (~> 4.1)
-  - Nimble-Snapshots (~> 4.1)
+  - Nimble (~> 5.1)
+  - Nimble-Snapshots (~> 4.3)
   - PCSideMenuController (from `../`)
-  - Quick (~> 0.9)
+  - Quick (~> 0.10)
 
 EXTERNAL SOURCES:
   PCSideMenuController:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
-  Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
-  Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
-  PCSideMenuController: 40b611af7d941a7ff06137ccfedb7bb2c6fdefe5
-  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Nimble: 5ea121a2eda60440287054cde077fc0ad22227b3
+  Nimble-Snapshots: 4ba722c35b73a680cbd856e4bc22076dfb8085d4
+  PCSideMenuController: 437f8af27ba22aee4873e12aabafd9eb269ac5a0
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
 
-PODFILE CHECKSUM: 094496a19bebe1dc56f3987a259d8f4c266ecb4b
+PODFILE CHECKSUM: 5c54c80fca860746f8f002b4b3d579ab4d5bcb83
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

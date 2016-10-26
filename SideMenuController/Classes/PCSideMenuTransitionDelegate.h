@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, PCSideMenuPosition) {
 
 @interface PCSideMenuTransitionDelegate : NSObject <UIViewControllerTransitioningDelegate>
 
+@property (nonatomic, strong) UIColor *backdropColor;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactionController;
 
 -(instancetype)initWithMenuPosition:(PCSideMenuPosition)menuPosition;

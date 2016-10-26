@@ -7,8 +7,16 @@ target 'SideMenuController_Example' do
     inherit! :search_paths
 
     pod 'FBSnapshotTestCase', '~> 2.1'
-    pod 'Quick', '~> 0.9'
-    pod 'Nimble', '~> 4.1'
-    pod 'Nimble-Snapshots', '~> 4.1'
+    pod 'Quick', '~> 0.10'
+    pod 'Nimble', '~> 5.1'
+    pod 'Nimble-Snapshots', '~> 4.3'
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '3.0'
+    end
   end
 end
