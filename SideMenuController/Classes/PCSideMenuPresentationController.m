@@ -31,10 +31,19 @@
 
 #pragma mark - Lazy Instantiation
 
+-(void)setBackdropColor:(UIColor *)backdropColor {
+  _backdropColor = backdropColor;
+  
+}
+
 -(UIView *)dimmingView {
   if (_dimmingView == nil) {
     _dimmingView = [UIView new];
-    _dimmingView.backgroundColor = [UIColor colorWithRed:13.0/255.0 green:13.0/255.0 blue:13.0/255.0 alpha:1];
+    if (self.backdropColor != nil) {
+      _dimmingView.backgroundColor = self.backdropColor;
+    } else {
+      _dimmingView.backgroundColor = [UIColor colorWithRed:13.0/255.0 green:13.0/255.0 blue:13.0/255.0 alpha:1];
+    }
     _dimmingView.userInteractionEnabled = YES;
     _dimmingView.alpha = 0.0;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapBackground:)];

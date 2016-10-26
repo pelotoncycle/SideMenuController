@@ -135,6 +135,7 @@
                                                          sourceViewController:(UIViewController *)source {
   PCSideMenuPresentationController *result = [[PCSideMenuPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
   result.menuPosition = self.menuPosition;
+  result.backdropColor = self.backdropColor;
 
   return result;
 }

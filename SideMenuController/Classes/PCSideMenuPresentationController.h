@@ -12,5 +12,6 @@
 @interface PCSideMenuPresentationController : UIPresentationController
 
 @property (nonatomic) PCSideMenuPosition menuPosition;
+@property (nonatomic, strong) UIColor *backdropColor;
 
 @end
