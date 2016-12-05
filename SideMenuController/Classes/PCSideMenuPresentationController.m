@@ -45,7 +45,7 @@
       _dimmingView.backgroundColor = [UIColor colorWithRed:13.0/255.0 green:13.0/255.0 blue:13.0/255.0 alpha:0.6];
     }
     _dimmingView.userInteractionEnabled = YES;
-    _dimmingView.alpha = 1.0;
+    _dimmingView.alpha = 0.0;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapBackground:)];
     tap.numberOfTapsRequired = 1;
     [_dimmingView addGestureRecognizer:tap];
