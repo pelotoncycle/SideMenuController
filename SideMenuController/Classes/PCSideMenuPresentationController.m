@@ -42,10 +42,10 @@
     if (self.backdropColor != nil) {
       _dimmingView.backgroundColor = self.backdropColor;
     } else {
-      _dimmingView.backgroundColor = [UIColor colorWithRed:13.0/255.0 green:13.0/255.0 blue:13.0/255.0 alpha:1];
+      _dimmingView.backgroundColor = [UIColor colorWithRed:13.0/255.0 green:13.0/255.0 blue:13.0/255.0 alpha:0.6];
     }
     _dimmingView.userInteractionEnabled = YES;
-    _dimmingView.alpha = 0.0;
+    _dimmingView.alpha = 1.0;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapBackground:)];
     tap.numberOfTapsRequired = 1;
     [_dimmingView addGestureRecognizer:tap];
@@ -66,7 +66,7 @@
   self.containerView.userInteractionEnabled = YES;
 
   [self.presentingViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
-    self.dimmingView.alpha = 0.6;
+    self.dimmingView.alpha = 1.0;
     [self setStatusBarHidden:YES animated:NO];
   } completion:nil];
 }
